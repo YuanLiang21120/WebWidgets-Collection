@@ -1,3 +1,3 @@
 ### A sliding widget for background change
 
-<img src= "" style="zoom:50%;" />
+<img src= "background_slider.png" style="zoom:50%;" />
