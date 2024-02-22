@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #0082ce, #ffd000);
+}
+
+h2 {
+    position: relative;
+    display: flex;
+    gap: 15px;
+    color: white;
+    font-size: 4em;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+h2 span {
+    position: relative;
+    filter: blur(5px);
+    transition: 0.5s;
+}
+
+h2 span i:before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 8px;
+    background: white;
+    top: 4px;
+    left: 3px;
+    box-shadow: 0 53px #fff, 40px 53px #fff, 40px 0 white;
+    opacity: 0;
+}
+
+h2 span i:after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 2px;
+    background: white;
+    top: 4px;
+    left: 3px;
+    box-shadow: 0 60px #fff, 32px 60px #fff, 32px 0 white;
+    opacity: 0;
+}
+
+h2 span:hover {
+    filter: blur(0);
+    transition: 0s;
+}
+
+h2 span:hover i:before,
+h2 span:hover i:after {
+    opacity: 1;
+}
